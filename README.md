@@ -1,2 +1,2 @@
 # challDev
-Just some small challenges i create for a ctf concept.
+Just some small challenges for ctf concepts.
