@@ -1,4 +1,5 @@
 Encryptor
+
 dificulty: easy
 ----------------
 So challenge give us an elf file called encryptor and an encrypted elf
