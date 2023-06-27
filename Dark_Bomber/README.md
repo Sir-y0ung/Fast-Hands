@@ -12,6 +12,9 @@ You're part of the United Nations of Zenium, and your state wants to create a de
 
 Win and escape the planet or fail to survive.
 
+Flag:
+----------------------------
+HTB{B0wb_d3Fus3d_succ3sfu!!y}
 
 tags
 ----------------------------
