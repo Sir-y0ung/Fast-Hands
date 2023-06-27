@@ -12,5 +12,14 @@ Now, 16 years after the Armistice, warface is about to re-emerge. Scientists hav
 You're part of the United Nations of Zenium, and your state wants to create a democratic colony where Vitalium will be used to make humanity healthy again. Your opponent is the Board of Arodor, a strict dictatorship that wants to ensure only the elite can get a second chance in life.
 
 Win and escape the planet or fail to survive.
------------------
+
+
+Analyzing the binary
+----------------------
+Running strings we can easily identify that is a 64 bit rust binary 
+
+
+
+
+
 
