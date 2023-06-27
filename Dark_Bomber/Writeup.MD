@@ -17,9 +17,3 @@ Win and escape the planet or fail to survive.
 Analyzing the binary
 ----------------------
 Running strings we can easily identify that is a 64 bit rust binary 
-
-
-
-
-
-
