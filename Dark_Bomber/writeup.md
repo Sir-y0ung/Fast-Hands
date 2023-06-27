@@ -4,15 +4,7 @@ Dark Bomber
 
 Discription:
 -----------------
-It's the year 2244. Time to leave the planet.
-Eighty years ago, Earth faced a crisis like never before. Fossil fuels had been exhausted, water was scarce, and power a luxury. In a world filled with darkness, tensions began to rise between nations, and the once united global community split into two power states, each vying for control, power, and survival. These 80 years of dispute stayed in history as the Dark War.
-
-Now, 16 years after the Armistice, warface is about to re-emerge. Scientists have confirmed an alternative power source on Mars – Vitalium – and the two states are now racing to establish a colony on the red planet. A ruthless competition of hacking and cyber-attacks has begun, and both sides are trying to damage and exploit each other's infrastructure.
-
-You're part of the United Nations of Zenium, and your state wants to create a democratic colony where Vitalium will be used to make humanity healthy again. Your opponent is the Board of Arodor, a strict dictatorship that wants to ensure only the elite can get a second chance in life.
-
-Win and escape the planet or fail to survive.
-
+Your task is to defuse the bomb as soon as possible!
 
 Analyzing the binary
 ----------------------
@@ -20,13 +12,14 @@ Running strings we can easily identify that is a 64 bit rust binary
 
 ![rsproof](https://github.com/YoungFlexerGR/challDev/assets/82509480/59216039-ff39-4c71-a405-ad79de3fdbbc)
 
-Opening the executable in ida seems that is not stripped so we have all the function names :)
-Lets jump into main to start reversing the binary.Seems that the binary takes one comand line argument where it is the file to encrypt
-we see that there is a function encrypt that takes as argument the bytes from the given filename 
+Opening the executable in ida seems that is not stripped so we have all function names :)
+Usefull functions is:\
+`read_file_to_bytes` -> returns a bytearray with the readed bytes.\
+`write_bytes_to_file` -> writes given bytearray into a file.\
+`encrypt` -> encrypts the given bytearray.\
+`generate_unique_list` -> generates a list with random numbers with the given seed.
 
-![encrypt](https://github.com/YoungFlexerGR/challDev/assets/82509480/16791c62-6b3e-45da-ae40-92902c673bec)
-
-Analyzing encrypt function a bit more
+Jumping into encrypt function since we want to know the way that encryptor works
 we can see that there is 3 stages of encryption
 ![encryptFunction](https://github.com/YoungFlexerGR/challDev/assets/82509480/3a52bb4f-35a1-43e2-80b7-13db67f2c807)
 
