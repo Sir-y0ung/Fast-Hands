@@ -4,7 +4,7 @@ Fast Hands
 
 Discription:
 -----------------
-Your task is to defuse the bomb as soon as possible!
+In the midst of the race to colonize Mars, a covert mission unfolds. A mysterious bomb, packed with destructive power, is discovered aboard the United Nations of Zenium's flagship. Time is of the essence as a team of elite defusers must navigate through intricate puzzles, defying the Board of Arodor's sabotage attempts, to prevent catastrophe and secure the future of humanity.
 
 Analyzing the binary
 ----------------------
