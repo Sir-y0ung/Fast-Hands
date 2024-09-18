@@ -31,7 +31,7 @@ Difficulty: <font color='orange'>Medium</font>
 
 # Enumeration
 ## Running the binary
-we prompt for a secret passphrase hmm
+We prompt for a secret passphrase hmm...
 
 
 ## Analyzing the source code (Ida part)
@@ -39,13 +39,13 @@ Lets start with the file command!
 ```
 rega_town: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=5223aaede99eb8790c66284d76ddaebe527e70a5, for GNU/Linux 3.2.0, with debug_info, not stripped
 ```
-Ok so we have to deal with a 64 bit not stripped rust binary!\n
-running strings on we can detect some regex patterns that seems interesting like these
+Ok so we have to deal with a 64 bit not stripped rust binary!\
+Running strings on we can detect some regex patterns that seems interesting like these
 ```
 (?:.[^0-9]*\d){5}
 .{24}\x54.\x65.\x54.*
 ```
-Dissasembpling our executable we came accross to 3 different functions except main
+Disassembling our executable we came accross to 3 different functions except main
 ```
 filter_input
 check_input
