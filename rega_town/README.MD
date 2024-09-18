@@ -13,7 +13,7 @@ HTB{Y0u_Ar3_Th3_K1ng_O7_The_Town}
 
 Challenge files:
 ----------------------------
-[Rega Town.zip](https://github.com/YoungFlexerGR/challDev/files/11904542/Fast_Hands.zip)
+[Rega Town.zip]( )
 
 tags
 ----------------------------
