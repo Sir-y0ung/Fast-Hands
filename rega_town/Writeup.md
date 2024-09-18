@@ -1,12 +1,7 @@
-![img](assets/banner.png)
 
-<img src='assets/htb.png' style='zoom: 80%;' align=left /> <font size='10'><Challenge_Name></font>
+Prepared By: `YoungFlexer`
 
-1<sup>st</sup> August 2023
-
-Prepared By: `<author_name>`
-
-Challenge Author(s): `<author_name>`
+Challenge Author(s): `YoungFlexer`
 
 Difficulty: <font color='orange'>Medium</font>
 
@@ -16,24 +11,24 @@ Difficulty: <font color='orange'>Medium</font>
 
 # Synopsis (!)
 
-- Briefly explain what the user must do to solve this challenge.
+- user must parse and understand some complex regex to transform them into z3 constants !
 
 ## Description (!)
 
-- ...
+- Welcome to Rega Town, a quaint little place where everyone communicates through the magic of patterns and rules!
 
 ## Skills Required (!)
 
-- Python
+- Rust
 - Researching Skills
-- C/C++
+- Regex
 - Know how to use common RE tools (i.e. Ghidra, IDA)
-- ...
+- z3-solver
 
 ## Skills Learned (!)
 
-- Learn how SQLi works.
-- Learn how to unpack executables.
+- Learn how regex rules work.
+- Learn how to debug executables.
 - Learn how to solve linear systems of equations.
 - ...
 
