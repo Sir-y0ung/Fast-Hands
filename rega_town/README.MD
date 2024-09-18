@@ -4,7 +4,7 @@ Rega Town
 
 Discription: 
 ----------------------------
-Try to pass the guards and become our new leader
+Try to pass the guards and become our new leader  \
 pass: hackthebox
 
 Flag:
