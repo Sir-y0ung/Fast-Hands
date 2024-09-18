@@ -44,11 +44,14 @@ fn main() {
     let trimmed_input = user_input.trim_end();
     
     let mut result = filter_input(&trimmed_input);
-
-    result &= check_input(user_input.to_string());
     
     if  result != 0 {
-        println!("Correct one of us!!");
+        
+        result &= check_input(user_input.to_string());
+        
+        if result != 0 {
+            println!("Correct one of us!!");
+        }
     }   
     else {
         println!("Maybe next time :<");
