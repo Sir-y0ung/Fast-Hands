@@ -16,4 +16,4 @@ Challenge files:
 
 tags
 ----------------------------
-`#rust` , `#regex`, '#z3-constants', '#medium'
+`#rust` , `#regex`, `#z3-constants`, `#medium`
