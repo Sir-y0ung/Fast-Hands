@@ -48,7 +48,12 @@ running strings on we can detect some regex patterns that seems interesting like
 .{24}\x54.\x65.\x54.*
 ```
 
-### opening binary with ida we 
-We came across with the first function called filter_input
+### Ida part
+Dissasembpling our executable we came accross to 3 different functions except main
+`
+filter_input
+check_input
+multiply_characters
+`
 
 # Solution (!)
