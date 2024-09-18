@@ -11,7 +11,7 @@ Difficulty: <font color='orange'>Medium</font>
 
 # Synopsis (!)
 
-- user must parse and understand some complex regex to transform them into z3 constants !
+- User must parse and understand some complex regex to transform them into z3 constants !
 
 ## Description (!)
 
@@ -30,78 +30,25 @@ Difficulty: <font color='orange'>Medium</font>
 - Learn how regex rules work.
 - Learn how to debug executables.
 - Learn how to solve linear systems of equations.
-- ...
 
 # Enumeration (!)
+## Running the binary
+we prompt for a secret passphrase hmm
+
 
 ## Analyzing the source code (*)
+Lets start with the file command!
+```
+rega_town: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=5223aaede99eb8790c66284d76ddaebe527e70a5, for GNU/Linux 3.2.0, with debug_info, not stripped
+```
+Ok so we have to deal with a 64 bit not stripped rust binary!\n
+running strings on we can detect some regex patterns that seems interesting like these
+```
+(?:.[^0-9]*\d){5}
+.{24}\x54.\x65.\x54.*
+```
 
-- Explain what source files you are provided with when you unzip the challenge zip file.
-
-Analyze the source files as much as you can so it is clear what the challenge is about.
-
-...
-
-If we look at `source.py`, we can see that our goal is:
-
-- Specify the goal of the challenge (i.e. where the flag is and how it can be accessed)
-- ...
-
-The basic workflow of the script is as follows:
-
-1. Method `test()` is called which then calls `test1()`
-2. `test1()` creates an object of the `XXX` class which initializes `YYY`.
-3. ...
-
-A little summary of all the interesting things we have found out so far:
-
-1. The PHP query handler does not use prepared statements.
-2. The RSA modulo is generated with a non-standard way.
-3. ...
+### opening binary with ida we 
+We came across with the first function called filter_input
 
 # Solution (!)
-
-## Finding the vulnerability (*)
-
-Explain where the vulnerability is. Be as detailed as possible so there are no logical gaps as to how you figured out the vulnerability and how you will proceed to the solution.
-
-## Exploitation (!)
-
-### Connecting to the server (*)
-
-Here is some boilerplate code for connecting to a docker-based challenge:
-
-```python
-if __name__ == "__main__":
-    r = remote("0.0.0.0", 1337)
-    pwn()
-```
-
-Let us consider our attack scenario.
-
-1. ...
-2. ...
-3. ...
-
-The attack explained above can be implemented with the following code:
-
-```python
-def important_function_that_does_something(param1, param2):
-    <function_body>
-```
-
-### Getting the flag (!)
-
-A final summary of all that was said above:
-
-1.
-2.
-
-This recap can be represented by code using `pwn()` function:
-
-```python
-def pwn():
-    pass
-```
-
-Avoid writing any function body here. Make sure you have written them under `Exploitation` or `Finding the vulnerability` sections.
