@@ -1,12 +1,10 @@
 use regex::Regex;
 
-const validate:[&str;9] = [r"^.{33}$", r"(?:^[\x48][\x54][\x42]).*", r"^.{3}(\x7b).*(\x7d)$", r"^[[:upper:]]{3}.[[:upper:]].{3}[[:upper:]].{3}[[:upper:]].{3}[[:upper:]].{4}[[:upper:]].{2}[[:upper:]].{3}[[:upper:]].{4}$", r"(?:.*\x5f.*)", r"(?:.[^0-9]*\d.*){5}", r".{24}\x54.\x65.\x54.*", "^.{4}[X-Z]\\d._[A]\\D\\d.................[[:upper:]][n-x]{2}[n|c].$", ".{11}_T[h|7]\\d_[[:upper:]]\\dn[a-h]_[O]\\d_[[:alpha:]]{3}_.{5}"];
+const REGEX_VALIDATE:[&str;9] = [r"^.{33}$", r"(?:^[\x48][\x54][\x42]).*", r"^.{3}(\x7b).*(\x7d)$", r"^[[:upper:]]{3}.[[:upper:]].{3}[[:upper:]].{3}[[:upper:]].{3}[[:upper:]].{4}[[:upper:]].{2}[[:upper:]].{3}[[:upper:]].{4}$", r"(?:.*\x5f.*)", r"(?:.[^0-9]*\d.*){5}", r".{24}\x54.\x65.\x54.*", "^.{4}[X-Z]\\d._[A]\\D\\d.................[[:upper:]][n-x]{2}[n|c].$", ".{11}_T[h|7]\\d_[[:upper:]]\\dn[a-h]_[O]\\d_[[:alpha:]]{3}_.{5}"];
 
 fn filter_input(user_input:&str) -> i32 {
-
-    for i in validate {
-        let re = Regex::new(i).unwrap();
-
+    for i in REGEX_VALIDATE {               
+        let re = Regex::new(i).unwrap();    // looping all over to match input
         if !re.is_match(&user_input) {
             return 0;
         }
@@ -26,7 +24,7 @@ fn check_input(user_input:String) -> i32 {
     let mut c:usize = 0;
 
     for i in slices {
-        let givven = multiply_characters(i);
+        let givven = multiply_characters(i);    // Check if conditions are met 
         if givven != corr_values[c] {
             return 0
         }
