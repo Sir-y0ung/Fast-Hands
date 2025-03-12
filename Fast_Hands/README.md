@@ -8,7 +8,7 @@ Your task is to defuse the bomb as soon as possible!
 
 Flag:
 ----------------------------
-HTB{B0wb_d3Fus3d_succ3sfu!!y}
+---{B0wb_d3Fus3d_succ3sfu!!y}
 
 Challenge files:
 ----------------------------
