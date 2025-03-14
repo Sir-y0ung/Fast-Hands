@@ -1,2 +1,2 @@
 # challDev
-Just some small challenges for ctf concepts.
+Reversing challenges for ctf concepts.
